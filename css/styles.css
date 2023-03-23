@@ -1,1 +1,143 @@
-/* dev styles go here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-cont {
+    padding: 1rem;
+}
+
+
+/* ---------------------Typography----------------------- */
+
+h1,
+h2 {
+    color: #dc413e;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+header {
+    background-color: black;
+}
+
+header svg {
+    fill: #f5f5f5;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: #f5f5f5;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: #dc413e;
+}
+
+.menu li {
+    flex: 1 0 calc(50% - 1rem);
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+label {
+    display: block;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px #e8e8e8;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+label[for='accept'] {
+    font-size: 1rem;
+}
+
+input[type='submit'] {
+    width: unset;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: padding-left 0.5s ease-in-out;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+    color: #dc413e;
+    padding-left: 20px;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1260px) {
+
+    .inner-cont {
+        padding: 1rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        flex: 0;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    fieldset div {
+        flex: 1 0 calc(50% - 3rem);
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    textarea {
+        width: calc(50% - 1.5rem);
+    }
+
+}
